@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bf3b3b;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+
+  justify-content: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.images {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.img {
+  width: 50%;
+  height: 100%;
+}
+.iki,
+.uc,
+.four,
+.five {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: #f285ad;
+  }
+  .one {
+    display: none;
+  }
+  .iki {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  body {
+    background-color: #027353;
+  }
+  .iki {
+    display: none;
+  }
+  .uc {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #a6a6a6;
+  }
+  .uc {
+    display: none;
+  }
+  .four {
+    display: block;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  nav a {
+    font-size: 1rem;
+    color: #bf3b3b;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #f27830;
+  }
+  .four {
+    display: none;
+  }
+  .five {
+    display: block;
+  }
+
+  nav a {
+    font-size: 1rem;
+    color: white;
+  }
+}
